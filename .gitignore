@@ -11,7 +11,7 @@
 #./src/wp-content/index.php
 #./src/wp-content/languages
 #./src/wp-content/plugins/index.php
-#./src/wp-content/themes/index.php
+./src/wp-content/themes
 #./src/wp-includes/
 ./src/index.php
 ./src/license.txt
@@ -48,3 +48,6 @@
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+docker-compose.yml
+docker
+.idea
