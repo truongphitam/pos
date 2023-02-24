@@ -6,6 +6,7 @@
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
 .idea
+.idea/
 ./src/wp-admin/
 #./src/wp-content/index.php
 #./src/wp-content/languages
