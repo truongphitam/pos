@@ -11,9 +11,7 @@ get_header();
                 <img src="<?php echo get_template_directory_uri() ?>/img/hero_img.png" alt="Hero Image" class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInRight;">
             </div>
             <div class="cs-hero_text">
-                <div class="cs-hero_secondary_title">Free Forever For All Users.
-                </div>
-                <h2 class="cs-hero_title">Trợ Thủ Đắc Lực Cho <br/>Doanh Nghiệp Của Bạn</h2>
+                <h2 class="cs-hero_title wow fadeInUp">Trợ Thủ Đắc Lực Cho <br/>Doanh Nghiệp Của Bạn</h2>
                 <div class="cs-hero_subtitle">POS chuyên cung cấp thiết bị POS được trang bị bởi cơ sở hạ tầng thanh toán phù hợp và các dịch vụ tư vấn & triển khai. Chúng tôi nỗ lực mang đến các sản phẩm nhằm mục đích đơn giản hóa quy trình thanh toán và hỗ trợ cho tất cả các loại hình và quy mô doanh nghiệp.</div>
                 <a href="" class="cs-btn"><span>Xem sản phẩm</span></a>
             </div>
@@ -46,11 +44,7 @@ get_header();
     <div class="cs-height_95 cs-height_lg_70"></div>
     <div class="container">
         <div class="cs-seciton_heading cs-style1 text-center">
-            <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInUp;">
-                Giải pháp
-            </div>
-            <div class="cs-height_10 cs-height_lg_10"></div>
-            <h3 class="cs-section_title">Chúng tôi cung cấp sản phẩm thanh toán được tích hợp đa tính năng</h3>
+            <h3 class="cs-section_title wow fadeInUp">Chúng tôi cung cấp sản phẩm thanh toán được tích hợp đa tính năng</h3>
         </div>
         <div class="cs-height_50 cs-height_lg_40"></div>
         <div class="row">
@@ -148,7 +142,7 @@ get_header();
     <div class="cs-height_100 cs-height_lg_70"></div>
     <div class="container">
         <div class="row align-items-center flex-column-reverse-lg">
-            <div class="col-xl-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+            <div class="col-xl-6 wow fadeInLeft">
                 <div class="cs-left_full_width cs-space110">
                     <div class="cs-left_sided_img">
                         <img src="<?php echo get_template_directory_uri() ?>/img/about_img_1.png" alt="About">
@@ -158,16 +152,8 @@ get_header();
             <div class="col-xl-6">
                 <div class="cs-height_0 cs-height_lg_40"></div>
                 <div class="cs-seciton_heading cs-style1">
-                    <div class="cs-section_subtitle">About The POS</div>
-                    <div class="cs-height_10 cs-height_lg_10"></div>
-                    <h3 class="cs-section_title">Best solution for point of sale about details </h3>
+                    <h3 class="cs-section_title wow fadeIn">Giải pháp thanh toán toàn diện, đa dịch vụ chỉ với 1 thiết bị thông minh</h3>
                 </div>
-                <div class="cs-height_20 cs-height_lg_20"></div>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                    Lorem Ipsum the &amp; been the industry's. It was popularised in the 1960s <br>
-                    with the release of Letraset sheets containing Lorem Ipsum passages.
-                </p>
                 <div class="cs-height_15 cs-height_lg_15"></div>
                 <div class="cs-list_1_wrap">
                     <ul class="cs-list cs-style1 cs-mp0">
@@ -176,17 +162,22 @@ get_header();
                   <img src="<?php echo get_template_directory_uri() ?>/img/tick.svg" alt="Tick">
                 </span>
                             <div class="cs-list_right">
-                                <h3>Other point of sale information</h3>
-                                <p>But I must explain to you how all this mistaken in denouncing pleasure and praising pain was born and I will give.</p>
+                                <h3>Quản lý thông minh với Smart POS</h3>
+                                <p>
+                                    Smart POS giúp việc chuyển đổi số trong kinh doanh trở nên tinh gọn, mang lại hiệu quả lợi nhuận tức thì.
+                                </p>
+                                <p>
+                                    Smart POS được thiết kế và vận hành trong hệ sinh thái kinh doanh khép kín: nhận đơn hàng, đặt bàn, bán hàng, thanh toán, lưu trữ, quản lý data khách hàng (thói quen, sở thích, tần suất, giá trị đơn hàng,...) Hỗ trợ marketing thu hút và giữ chân khách hàng; Tạo nên đột phá về doanh thu và chất lượng dịch vụ.
+                                </p>
                             </div>
                         </li>
                         <li>
-                <span class="cs-list_icon">
-                  <img src="<?php echo get_template_directory_uri() ?>/img/tick.svg" alt="Tick">
-                </span>
+                            <span class="cs-list_icon">
+                              <img src="<?php echo get_template_directory_uri() ?>/img/tick.svg" alt="Tick">
+                            </span>
                             <div class="cs-list_right">
-                                <h3>Best process system POS</h3>
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti at.</p>
+                                <h3>Thanh toán đa dạng với Smart POS</h3>
+                                <p>Smart POS chấp nhận thanh toán đa dạng các loại thẻ ngân hàng (tín dụng, ghi nợ, thẻ 1 chạm contactless nội địa và quốc tế), các loại ví điện tử/QR codes khác nhau cho mọi dịch vụ, hàng hóa tại điểm kinh doanh.</p>
                             </div>
                         </li>
                     </ul>
@@ -592,9 +583,7 @@ get_header();
     <div class="cs-height_95 cs-height_lg_70"></div>
     <div class="container">
         <div class="cs-seciton_heading cs-style1 text-center">
-            <div class="cs-section_subtitle">Our Client</div>
-            <div class="cs-height_10 cs-height_lg_10"></div>
-            <h3 class="cs-section_title">Who we partner with</h3>
+            <h3 class="cs-section_title">ĐỐI TÁC VÀ KHÁCH HÀNG</h3>
         </div>
         <div class="cs-height_50 cs-height_lg_40"></div>
         <div class="cs-slider cs-style1 cs-gap-24">
@@ -688,7 +677,7 @@ get_header();
 </section>
 <!-- End Client Stores -->
 <!-- End Testimonials Section -->
-<section class="cs-gradient_bg_1">
+<section class="cs-gradient_bg_1 d-none">
     <div class="cs-height_95 cs-height_lg_70"></div>
     <div class="container">
         <div class="cs-seciton_heading cs-style1 text-center">
@@ -987,9 +976,7 @@ get_header();
 <section id="faq" class="cs-gradient_bg_1">
     <div class="cs-height_95 cs-height_lg_70"></div>
     <div class="cs-seciton_heading cs-style1 text-center">
-        <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInUp;">POS FAQ</div>
-        <div class="cs-height_10 cs-height_lg_10"></div>
-        <h3 class="cs-section_title">Frequently asked questions</h3>
+        <h3 class="cs-section_title wow fadeInUp">Frequently asked questions</h3>
     </div>
     <div class="cs-height_50 cs-height_lg_40"></div>
     <div class="container">
@@ -1131,86 +1118,6 @@ get_header();
     </div>
     <div class="cs-height_100 cs-height_lg_70"></div>
 </section>
-<!-- End Post Stores -->
-
-<!-- Start Contact Section -->
-<section class="cs-gradient_bg_1" id="contact">
-    <div class="cs-height_95 cs-height_lg_70"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-5 col-lg-8">
-                <div class="cs-seciton_heading cs-style1">
-                    <div class="cs-section_subtitle wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: fadeInUp;">Contract Us</div>
-                    <div class="cs-height_10 cs-height_lg_10"></div>
-                    <h3 class="cs-section_title">If you have any quiries, fill free to contact us</h3>
-                </div>
-                <div class="cs-height_20 cs-height_lg_20"></div>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the printing and typesetting.
-                </p>
-                <div class="cs-height_15 cs-height_lg_15"></div>
-                <div class="cs-iconbox cs-style3">
-                    <div class="cs-iconbox_icon">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/contact_icon_1.svg" alt="Icon">
-                    </div>
-                    <div class="cs-iconbox_right">
-                        <h2 class="cs-iconbox_title">Address</h2>
-                        <div class="cs-iconbox_subtitle">4117 Leroy LaneHarold, KY 41635,</div>
-                    </div>
-                </div>
-                <div class="cs-height_30 cs-height_lg_30"></div>
-                <div class="cs-iconbox cs-style3">
-                    <div class="cs-iconbox_icon">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/contact_icon_2.svg" alt="Icon">
-                    </div>
-                    <div class="cs-iconbox_right">
-                        <h2 class="cs-iconbox_title">Contract Number</h2>
-                        <div class="cs-iconbox_subtitle">+606-243-4966</div>
-                    </div>
-                </div>
-                <div class="cs-height_30 cs-height_lg_30"></div>
-                <div class="cs-iconbox cs-style3">
-                    <div class="cs-iconbox_icon">
-                        <img src="<?php echo get_template_directory_uri() ?>/img/contact_icon_3.svg" alt="Icon">
-                    </div>
-                    <div class="cs-iconbox_right">
-                        <h2 class="cs-iconbox_title">Email Address</h2>
-                        <div class="cs-iconbox_subtitle">demo@gmail.com</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 offset-xl-1">
-                <div class="cs-height_40 cs-height_lg_40"></div>
-                <form class="cs-contact_form">
-                    <h2 class="cs-contact_form_title">Please fill up the form</h2>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <input type="text" class="cs-form_field" placeholder="Name">
-                            <div class="cs-height_25 cs-height_lg_25"></div>
-                        </div>
-                        <div class="col-lg-6">
-                            <input type="text" class="cs-form_field" placeholder="Email address">
-                            <div class="cs-height_25 cs-height_lg_25"></div>
-                        </div>
-                        <div class="col-lg-12">
-                            <input type="text" class="cs-form_field" placeholder="Phone number">
-                            <div class="cs-height_25 cs-height_lg_25"></div>
-                        </div>
-                        <div class="col-lg-12">
-                            <textarea cols="30" rows="5" class="cs-form_field" placeholder="Write your massage"></textarea>
-                            <div class="cs-height_25 cs-height_lg_25"></div>
-                        </div>
-                        <div class="col-lg-12">
-                            <button class="cs-btn cs-size_md"><span>Send Message</span></button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="cs-height_95 cs-height_lg_70"></div>
-</section>
-<!-- End Contact Section -->
 <?php
 get_footer();
 ?>

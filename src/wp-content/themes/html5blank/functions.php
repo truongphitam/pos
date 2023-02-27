@@ -95,6 +95,7 @@ function html5blank_header_scripts() {
         wp_enqueue_script('jquery-counter', get_template_directory_uri() . '/js/jquery.counter.min.js', array(), '', true);
         wp_enqueue_script('wow', get_template_directory_uri() . '/js/wow.min.js', array(), '', true);
         wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), '', true);
+        wp_enqueue_script('main', get_template_directory_uri() . '/js/kai.js', array(), '', true);
     }
 }
 
@@ -113,6 +114,7 @@ function html5blank_styles() {
     wp_enqueue_style('slick', get_template_directory_uri() . '/css/slick.css');
     wp_enqueue_style('animate', get_template_directory_uri() . '/css/animate.css');
     wp_enqueue_style('style', get_template_directory_uri() . '/css/style.css');
+    wp_enqueue_style('kai', get_template_directory_uri() . '/css/kai.css');
 }
 
 // Register HTML5 Blank Navigation
