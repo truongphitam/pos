@@ -1,3 +1,30 @@
 .cs-seciton_heading.cs-style1 .cs-section_title{
   width: 100%;
 }
+
+#services-page .item-service{
+  margin-bottom: 70px;
+}
+
+#id_objective h4,
+#products-page h4,
+#services-page h4{
+  margin-bottom: 5px;
+}
+div.kai-line{
+  height: 3px;
+  background: #52c8c4;
+  width: 100px;
+}
+
+#id-call-contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 0px;
+}
+
+#id-call-contact h2{
+  font-size: 35px;
+  margin-bottom: 5px;
+}
