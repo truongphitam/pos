@@ -22,20 +22,24 @@
         <div class="container">
             <div class="cs-main_header_in">
                 <div class="cs-main_header_left">
-                    <a class="cs-site_branding cs-accent_color">
+                    <a class="cs-site_branding cs-accent_color" href="/">
                         <img src="<?php echo get_template_directory_uri() ?>/img/logo.svg" alt="Logo">
                     </a>
                 </div>
                 <div class="cs-main_header_center">
                     <div class="cs-nav">
-                        <ul class="cs-nav_list" style="display: none;">
-                            <li><a href="" class="cs-smoth_scroll">Về chúng tôi</a></li>
-                            <li><a href="" class="cs-smoth_scroll">Sản phẩm</a></li>
-                            <li><a href="" class="cs-smoth_scroll">Dịch vụ</a></li>
-                            <li><a href="" class="cs-smoth_scroll">Ứng dụng</a></li>
-                            <li><a href="" class="cs-smoth_scroll">Bài viết</a></li>
-                        </ul>
-                        <span class="cs-munu_toggle"><span></span></span></div>
+                        <?php
+                        $args = array(
+                            'menu_class' => 'cs-nav_list',
+                            'menu_id' => '',
+                            'container'=>false,
+                        );
+                        wp_nav_menu( $args );
+                        ?>
+                        <span class="cs-munu_toggle">
+                            <span></span>
+                        </span>
+                    </div>
                 </div>
                 <div class="cs-main_header_right">
                     <div class="cs-toolbox">

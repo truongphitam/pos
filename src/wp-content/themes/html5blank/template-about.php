@@ -43,58 +43,53 @@ get_header();
 </div>
 <section id="id_objective">
     <div class="container">
-        <div class="row" id="objective">
-            <div class="col-md-6 col-12 wow fadeInLeft">
-                <div class="content-service">
-                    <h4>SỨ MỆNH</h4>
-                    <div class="kai-line mb-3"></div>
-                    <p>
-                        Chúng tôi luôn không ngừng nỗ lực phát triển và hoàn thiện hệ sinh thái của riêng mình. Với đa dạng sản phẩm, dịch vụ, công nghệ,... chúng tôi mong muốn có thể mang lại giá trị thực tế đồng thời hỗ trợ khách hàng tối đa trong việc đạt được mục tiêu kinh doanh. Khách hàng sẽ luôn là trọng tâm trong mọi chiến lược phát triển sản phẩm cũng như định hướng của ATOM Solution.
-                    </p>
+        <?php
+        $args = array(
+            'post_type' => 'about_us'
+        );
+        $query = new WP_Query($args);
+        $services = $query->posts;
+        wp_reset_postdata();
+        ?>
+        <?php if($services){?>
+            <?php foreach ($services as $index => $service){?>
+                <?php
+                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $service->ID ), "single-post-thumbnail" );
+                ?>
+                <div class="row item-service">
+                    <?php if($index % 2 == 0){?>
+                        <div class="col-md-6 col-12 wow fadeInLeft">
+                            <div class="content-service">
+                                <h4><?php echo $service->post_title ?></h4>
+                                <div class="kai-line mb-3"></div>
+                                <p>
+                                    <?php echo $service->post_content ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12 wow fadeInRight">
+                            <img class="img-fluid" src="<?php echo $image[0]; ?>?v=1.1" alt="<?php echo $service->post_title ?>">
+                        </div>
+                    <?php }else{?>
+                        <div class="col-md-6 col-12 wow fadeInRight">
+                            <img class="img-fluid" src="<?php echo $image[0]; ?>?v=1.1" alt="<?php echo $service->post_title ?>">
+                        </div>
+                        <div class="col-md-6 col-12 wow fadeInLeft">
+                            <div class="content-service">
+                                <h4><?php echo $service->post_title ?></h4>
+                                <div class="kai-line mb-3"></div>
+                                <p>
+                                    <?php echo $service->post_content ?>
+                                </p>
+                            </div>
+                        </div>
+                    <?php }?>
                 </div>
-            </div>
-            <div class="col-md-6 col-12 wow fadeInRight">
-                <img class="img-fluid" src="https://atomsolution.vn//_next/static/media/img_services_2.b4ab5a25.png">
-            </div>
-        </div>
-        <div class="row" id="vision">
-            <div class="col-md-6 col-12 wow fadeInRight">
-                <img class="img-fluid" src="https://atomsolution.vn//_next/static/media/img_services_2.b4ab5a25.png">
-            </div>
-            <div class="col-md-6 col-12 wow fadeInLeft">
-                <div class="content-service">
-                    <h4>TẦM NHÌN</h4>
-                    <div class="kai-line mb-3"></div>
-                    <p>
-                        Xu hướng thanh toán không tiền mặt ngày càng trở nên phổ biến trên toàn thế giới. Tuy nhiên do những rào cản về mặt pháp lý và nhân lực mà việc tư vấn triển khai các hệ thống cũng như xây dựng hạ tầng trở thành một bài toán nan giải cho các doanh nghiệp trong quá trình chuyển đổi từ hình thức thanh toán tiền mặt truyền thống sang thanh toán không tiền mặt.
-                        <br>
-                        ATOM Solution tập trung vào việc mang đến giải pháp cho các đối tác có nhu cầu triển khai hình thức thanh toán hiện đại, từ đó giúp đa dạng các kênh thanh toán, thúc đẩy phát triển kinh doanh cho doanh nghiệp, đẩy mạnh xu hướng thanh toán không tiền mặt trong thị trường Việt Nam.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row" id="target">
-            <div class="col-md-6 col-12 wow fadeInLeft">
-                <div class="content-service">
-                    <h4>MỤC TIÊU</h4>
-                    <div class="kai-line mb-3"></div>
-                    <p>
-                        Với kinh nghiệm nhiều năm trong triển khai mảng thanh toán, ATOM Solution cung cấp dịch vụ tư vấn toàn diện trong việc chọn lựa hình thức cũng như hạ tầng phù hợp với mô hình kinh doanh của đối tác. Từ tiêu chí thiết kế, tư vấn giải pháp đến phương thức triển khai, chúng tôi luôn hướng tới sự tối ưu hóa về chất lượng nhưng vẫn đảm bảo phù hợp ngân sách của khách hàng.
-                        <br/>
-                        Bên cạnh đó, với đội ngũ IT và nghiên cứu phát triển sản phẩm có hơn 10 năm kinh nghiệm trong ngành tài chính ngân hàng cùng triển khai các hệ thống với lượng người dùng lớn, ATOM đặt mục tiêu trở thành một trong những công ty tài chính công nghệ hàng đầu Việt Nam trong thời gian tới.
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 col-12 wow fadeInRight">
-                <img class="img-fluid" src="https://atomsolution.vn//_next/static/media/img_services_2.b4ab5a25.png">
-            </div>
-        </div>
+            <?php }?>
+        <?php }?>
     </div>
 </section>
-<section class="cs-gradient_bg_1" id="id-call-contact">
-    <div class="call-contact text-center">
-        <h2>HÃY ĐỂ CHÚNG TÔI LÀ CẦU NỐI DẪN ĐẾN THÀNH CÔNG CỦA BẠN</h2>
-        <span class="cs-btn cs-color1 cs-modal_btn" data-modal="register"><span>Liên hệ</span></span>
-    </div>
-</section>
+<?php
+get_template_part('inc/ttp', 'contact');
+?>
 <?php get_footer(); ?>
