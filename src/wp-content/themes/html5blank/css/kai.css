@@ -2,13 +2,10 @@
   width: 100%;
 }
 
-#services-page .item-service{
-  margin-bottom: 70px;
-}
-
 #id_objective h4,
 #products-page h4,
-#services-page h4{
+#services-page h4,
+#applications-page h4{
   margin-bottom: 5px;
 }
 div.kai-line{
@@ -36,4 +33,26 @@ div.kai-line{
 
 .kai-faqs .cs-accordian{
   margin-bottom: 10px;
+}
+
+#id_objective{
+  padding-top: 100px;
+}
+
+#id_objective .item-service{
+padding-bottom: 100px;
+}
+
+.cs-gradient_bg_2{
+  background: linear-gradient(257.51deg, #FAF1FE 44.07%, #F2FCFE 100%);
+}
+
+#services-page,
+#applications-page{
+  padding-top: 180px;
+}
+
+#services-page .item-service,
+#applications-page .item-service{
+  padding-bottom: 70px;
 }

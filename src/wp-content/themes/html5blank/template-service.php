@@ -2,8 +2,7 @@
 /* Template Name: Service Template */
 get_header();
 ?>
-<section class="cs-gradient_bg_1" id="services-page">
-    <div class="cs-height_95 cs-height_lg_70"></div>
+<section class="cs-gradient_bg_2" id="services-page">
     <div class="container">
         <?php
         $args = array(
@@ -50,7 +49,6 @@ get_header();
             <?php }?>
         <?php }?>
     </div>
-    <div class="cs-height_95 cs-height_lg_70"></div>
 </section>
 <?php
 get_template_part('inc/tpt', 'contact');

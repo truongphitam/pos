@@ -90,6 +90,6 @@ get_header();
     </div>
 </section>
 <?php
-get_template_part('inc/ttp', 'contact');
+get_template_part('inc/tpt', 'contact');
 ?>
 <?php get_footer(); ?>
