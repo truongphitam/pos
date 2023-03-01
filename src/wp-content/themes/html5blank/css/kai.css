@@ -28,3 +28,12 @@ div.kai-line{
   font-size: 35px;
   margin-bottom: 5px;
 }
+
+.kai-faqs{
+  height: 509px;
+  overflow: auto;
+}
+
+.kai-faqs .cs-accordian{
+  margin-bottom: 10px;
+}

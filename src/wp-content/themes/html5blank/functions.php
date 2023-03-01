@@ -427,3 +427,59 @@ function html5_shortcode_demo( $atts, $content = null ) {
 function html5_shortcode_demo_2( $atts, $content = null ) {
     return '<h2>' . $content . '</h2>';
 }
+
+
+function get_terms_by_taxonomy($taxonomy, $params = [], $fields = []){
+    $args = [
+            'taxonomy' => $taxonomy,
+        'hide_empty' => false,
+    ];
+
+    if($params){
+        $args = array_merge($args, $params);
+    }
+
+
+    $data = get_terms($args);
+    if($data && $fields && is_array($fields)){
+        foreach ($data as $index => $item){
+            foreach ($fields as $field){
+                $data[$index]->$field = get_field($field, $item->taxonomy . '_' . $item->term_id);
+            }
+        }
+    }
+
+//    echo ('<pre>');
+//    print_r($data);
+//    echo ('</pre>');
+//    die();
+    return $data;
+}
+
+function get_post_with_post_type($post_type, $params = [], $fields = [], $limit = 3){
+    $args = [
+        'post_type' => $post_type,
+        'posts_per_page' => $limit,
+        'orderby' =>'date',
+        'order' => 'DESC'
+    ];
+
+    if($params){
+        $args = array_merge($args, $params);
+    }
+    $data = new WP_Query($args) ;
+
+    $data = $data->posts ?? [];
+    if($fields){
+        foreach ($data as $index => $item){
+            foreach ($fields as $field){
+                $data[$index]->$field = get_field($field, $item->ID);
+            }
+        }
+    }
+//    echo ('<pre>');
+//    print_r($data);
+//    echo ('</pre>');
+//    die();
+    return $data;
+}
