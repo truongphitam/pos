@@ -483,3 +483,11 @@ function get_post_with_post_type($post_type, $params = [], $fields = [], $limit 
 //    die();
     return $data;
 }
+
+function convert_date($date, $format = ''){
+    if($format){
+        return date($format, strtotime($date));
+    }
+
+    return date('d.m.Y', strtotime($date));
+}

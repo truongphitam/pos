@@ -43,9 +43,14 @@
                 </div>
                 <div class="cs-main_header_right">
                     <div class="cs-toolbox">
-                        <span class="cs-btn cs-color1 cs-modal_btn" data-modal="register"><span>Liên hệ</span></span>
+                        <span class="cs-btn cs-color1 cs-modal_btn" data-modal="register">
+                            <span>
+                                <a href="<?= get_page_link(7) ?>">
+                                    Liên hệ
+                                </a>
+                            </span>
+                        </span>
                         <span class="cs-link cs-modal_btn" data-modal="login">VI</span>
-
                     </div>
                 </div>
             </div>

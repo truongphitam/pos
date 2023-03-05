@@ -56,3 +56,14 @@ padding-bottom: 100px;
 #applications-page .item-service{
   padding-bottom: 70px;
 }
+
+#category_post .post-thumbnail {
+  height: 100%;
+  padding-bottom: 0;
+}
+
+#category_post .post-thumbnail img {
+  height: 100%;
+  filter: brightness(85%);
+  object-fit: cover;
+}

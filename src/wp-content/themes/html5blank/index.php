@@ -511,35 +511,42 @@ get_header();
         <div class="cs-seciton_heading cs-style1 text-center">
             <h3 class="cs-section_title wow fadeInUp">Tin tức</h3>
         </div>
+        <?php
+        $args = array(
+            'post_type' => 'post',
+            'post_status'   => 'publish',
+            'posts_per_page' => 10,
+            'order' => 'DESC'
+        );
+        $wpb_all_query = new WP_Query($args);
+        $posts = $wpb_all_query->posts ?? [];
+        ?>
+        <?php if($posts){?>
         <div class="cs-height_50 cs-height_lg_40"></div>
         <div class="cs-slider cs-style1 cs-gap-24">
             <div class="cs-slider_container" data-autoplay="0" data-loop="1" data-speed="600" data-fade-slide="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-lg-slides="4" data-add-slides="4">
                 <div class="cs-slider_wrapper">
-                    <?php for ($i = 0; $i < 10; $i++){ ?>
+                    <?php foreach ($posts as $index => $post){ ?>
                         <div class="slick-slide">
                         <div class="cs-post cs-style1">
                             <div class="cs-post_thumb">
-                                <div class="cs-post_thumb_in cs-bg" data-src="<?php echo get_template_directory_uri() ?>/img/post_2.jpeg" style="background-image: url('<?php echo get_template_directory_uri() ?>/img/post_2.jpeg');">
+                                <div class="cs-post_thumb_in cs-bg" data-src="<?php echo get_the_post_thumbnail_url($post->ID); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url($post->ID); ?>');">
                                 </div>
                             </div>
                             <div class="cs-post_info">
                                 <ul class="cs-post_meta cs-mp0">
                                     <li>
                                       <span class="cs-medium">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M313.6 304c-28.7 0-42.5 16-89.6 16c-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4c14.6 0 38.3 16 89.6 16c51.7 0 74.9-16 89.6-16c47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0S80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96s-96-43.1-96-96s43.1-96 96-96z"></path></svg>
-                                      </span>admin
-                                    </li>
-                                    <li>
-                                      <span class="cs-medium">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 448 512"><path fill="currentColor" d="M152 64h144V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40h40c35.3 0 64 28.65 64 64v320c0 35.3-28.7 64-64 64H64c-35.35 0-64-28.7-64-64V128c0-35.35 28.65-64 64-64h40V24c0-13.25 10.7-24 24-24s24 10.75 24 24v40zM48 448c0 8.8 7.16 16 16 16h320c8.8 0 16-7.2 16-16V192H48v256z"></path></svg>
-                                      </span>12.09.2022
+                                      </span>
+                                        <?= convert_date($post->post_date) ?>
                                     </li>
                                 </ul>
-                                <h2 class="cs-post_title">Best super shop point of sale setup</h2>
-                                <span class="cs-text_btn">
+                                <h2 class="cs-post_title"><?= $post->post_title ?></h2>
+                                <a class="cs-text_btn" href="<?= get_post_permalink($post->ID) ?>">
                                     <span>Read More</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M13.3 17.275q-.3-.3-.288-.725q.013-.425.313-.725L16.15 13H5q-.425 0-.713-.288Q4 12.425 4 12t.287-.713Q4.575 11 5 11h11.15L13.3 8.15q-.3-.3-.3-.713q0-.412.3-.712t.713-.3q.412 0 .712.3L19.3 11.3q.15.15.213.325q.062.175.062.375t-.062.375q-.063.175-.213.325l-4.6 4.6q-.275.275-.687.275q-.413 0-.713-.3Z"></path></svg>
-                                </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -550,6 +557,7 @@ get_header();
 
             </div>
         </div>
+        <?php }?>
     </div>
     <div class="cs-height_100 cs-height_lg_70"></div>
 </section>
