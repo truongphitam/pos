@@ -52,4 +52,7 @@ $_cat_name = $_cat_object->name;
         </div>
     </div>
 </section>
+<?php
+get_template_part('inc/tpt', 'contact');
+?>
 <?php get_footer(); ?>
