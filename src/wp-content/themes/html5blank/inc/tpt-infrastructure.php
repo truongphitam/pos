@@ -1,2 +1,2 @@
 <?php
-echo 'Infrastructure';
+echo 'Coming soon';

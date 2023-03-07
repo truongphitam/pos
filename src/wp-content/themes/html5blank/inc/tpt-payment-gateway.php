@@ -1,2 +1,2 @@
 <?php
-echo 'Payment gateway';
+echo 'Coming soon';
