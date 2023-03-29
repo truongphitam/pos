@@ -71,3 +71,14 @@ padding-bottom: 100px;
 h4.unset-margin-bottom{
   margin-bottom: 5px;
 }
+
+.kai_cs_iconbox_subtitle{
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-height: 22px;
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  display: -webkit-box;
+}

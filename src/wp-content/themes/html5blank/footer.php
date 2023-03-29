@@ -13,9 +13,9 @@
                     </div>
                     <div class="cs-height_30 cs-height_lg_30"></div>
                     <div class="cs-social_btns cs-style1">
-                        <a href="https://posing-html.vercel.app/#"><img src="<?php echo get_template_directory_uri() ?>/img/facebook.svg" alt="Facebook"></a>
-                        <a href="https://posing-html.vercel.app/#"><img src="<?php echo get_template_directory_uri() ?>/img/twitter.svg" alt="Twitter"></a>
-                        <a href="https://posing-html.vercel.app/#"><img src="<?php echo get_template_directory_uri() ?>/img/instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/twitter.svg" alt="Twitter"></a>
+                        <a href="#"><img src="<?php echo get_template_directory_uri() ?>/img/instagram.svg" alt="Instagram"></a>
                     </div>
                 </div>
             </div><!-- .col -->
@@ -23,9 +23,9 @@
                 <div class="cs-footer_item widget_nav_menu">
                     <h2 class="cs-widget_title">Sản phẩm</h2>
                     <ul class="menu">
-                        <li><a href="">Thiết bị POS</a></li>
-                        <li><a href="">Thiết bị POS</a></li>
-                        <li><a href="">Thiết bị POS</a></li>
+                        <li><a href="#">Thiết bị POS</a></li>
+                        <li><a href="#">Hạ tầng POS</a></li>
+                        <li><a href="#">Online payment gateway</a></li>
                     </ul>
                 </div>
             </div><!-- .col -->
@@ -33,9 +33,9 @@
                 <div class="cs-footer_item widget_nav_menu">
                     <h2 class="cs-widget_title">Dịch vụ</h2>
                     <ul class="menu">
-                        <li><a href="">Thiết bị POS</a></li>
-                        <li><a href="">Thiết bị POS</a></li>
-                        <li><a href="">Thiết bị POS</a></li>
+                        <li><a href="#">Thiết bị POS</a></li>
+                        <li><a href="#">Thiết bị POS</a></li>
+                        <li><a href="#">Thiết bị POS</a></li>
                     </ul>
                 </div>
             </div><!-- .col -->

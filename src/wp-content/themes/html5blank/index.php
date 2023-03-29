@@ -75,7 +75,7 @@ get_header();
                     <div class="cs-iconbox_in">
                         <div class="cs-iconbox_number cs-primary_font">0<?= $index+1 ?></div>
                         <h3 class="cs-iconbox_title"><?= $category->name ?></h3>
-                        <div class="cs-iconbox_subtitle">
+                        <div class="cs-iconbox_subtitle kai_cs_iconbox_subtitle">
                             <?= $category->description ?>
                         </div>
                         <a class="d-none" href="" style="color: red">
@@ -85,10 +85,7 @@ get_header();
                 </div>
                 <div class="cs-height_25 cs-height_lg_25"></div>
             </div>
-            <?php
-                }
-            }
-            ?>
+            <?php } } ?>
             <?php
             $services = get_post_with_post_type('dich_vu', [], ['icon']);
             if($services){
@@ -104,7 +101,7 @@ get_header();
                             <div class="cs-iconbox_in">
                                 <div class="cs-iconbox_number cs-primary_font">0<?= count($product_categories) + $index+1 ?></div>
                                 <h3 class="cs-iconbox_title"><?= $service->post_title ?></h3>
-                                <div class="cs-iconbox_subtitle">
+                                <div class="cs-iconbox_subtitle kai_cs_iconbox_subtitle">
                                     <?= $service->post_content ?>
                                 </div>
                                 <a class="d-none" href="" style="color: red">
@@ -139,22 +136,21 @@ get_header();
             <div class="col-xl-6">
                 <div class="cs-height_0 cs-height_lg_40"></div>
                 <div class="cs-seciton_heading cs-style1">
-                    <h3 class="cs-section_title wow fadeIn">Giải pháp thanh toán toàn diện, đa dịch vụ chỉ với 1 thiết bị thông minh</h3>
+                    <h3 class="cs-section_title wow fadeIn">
+                        Nền tảng tối ưu dành cho các đơn vị cung cấp giải pháp thanh toán POS
+                    </h3>
                 </div>
                 <div class="cs-height_15 cs-height_lg_15"></div>
                 <div class="cs-list_1_wrap">
                     <ul class="cs-list cs-style1 cs-mp0">
                         <li>
-                <span class="cs-list_icon">
-                  <img src="<?php echo get_template_directory_uri() ?>/img/tick.svg" alt="Tick">
-                </span>
+                            <span class="cs-list_icon">
+                              <img src="<?php echo get_template_directory_uri() ?>/img/tick.svg" alt="Tick">
+                            </span>
                             <div class="cs-list_right">
-                                <h3>Quản lý thông minh với Smart POS</h3>
+                                <h3>Tiết kiệm Chi phí xây dựng hạ tầng đầu vào</h3>
                                 <p>
-                                    Smart POS giúp việc chuyển đổi số trong kinh doanh trở nên tinh gọn, mang lại hiệu quả lợi nhuận tức thì.
-                                </p>
-                                <p>
-                                    Smart POS được thiết kế và vận hành trong hệ sinh thái kinh doanh khép kín: nhận đơn hàng, đặt bàn, bán hàng, thanh toán, lưu trữ, quản lý data khách hàng (thói quen, sở thích, tần suất, giá trị đơn hàng,...) Hỗ trợ marketing thu hút và giữ chân khách hàng; Tạo nên đột phá về doanh thu và chất lượng dịch vụ.
+                                    Cung cấp hệ sinh thái giải pháp toàn diện, từ hạ tầng đến thiết bị, giúp doanh nghiệp giảm tải chi phí cho việc xây dựng và quản lý hệ thống.
                                 </p>
                             </div>
                         </li>
@@ -163,8 +159,17 @@ get_header();
                               <img src="<?php echo get_template_directory_uri() ?>/img/tick.svg" alt="Tick">
                             </span>
                             <div class="cs-list_right">
-                                <h3>Thanh toán đa dạng với Smart POS</h3>
-                                <p>Smart POS chấp nhận thanh toán đa dạng các loại thẻ ngân hàng (tín dụng, ghi nợ, thẻ 1 chạm contactless nội địa và quốc tế), các loại ví điện tử/QR codes khác nhau cho mọi dịch vụ, hàng hóa tại điểm kinh doanh.</p>
+                                <h3>Giảm tải công việc & Tối ưu việc quản lý</h3>
+                                <p>Hệ thống các phần mềm quản lý từ xa như MDM (quản lý POS), TMS (quản lý merchant), Merchant Portal (quản lý kinh doanh), v.v., giúp doanh nghiệp chuẩn hóa và tinh gọn các quy trình.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="cs-list_icon">
+                              <img src="<?php echo get_template_directory_uri() ?>/img/tick.svg" alt="Tick">
+                            </span>
+                            <div class="cs-list_right">
+                                <h3>Linh hoạt theo nhu cầu của khách hàng</h3>
+                                <p>Linh hoạt trong việc điều chỉnh sản phẩm, tính năng, thiết kế và cung cấp các tùy chọn bổ sung để phù hợp với nhu cầu của từng khách hàng.</p>
                             </div>
                         </li>
                     </ul>
@@ -211,100 +216,11 @@ get_header();
         </div>
     </div>
 </div>
+    <div class="cs-height_75 cs-height_lg_70"></div>
 <!-- End Fun Fact -->
-
-<!-- Start All Feature -->
-<section class="cs-bg" data-src="<?php echo get_template_directory_uri() ?>/img/feature_bg.svg" style="background-image: url('<?php echo get_template_directory_uri() ?>/img/feature_bg.svg');">
-    <div class="cs-height_135 cs-height_lg_0"></div>
-    <div id="feature">
-        <div class="cs-height_95 cs-height_lg_70"></div>
-        <div class="container">
-            <div class="cs-seciton_heading cs-style1 text-center">
-                <h3 class="cs-section_title wow fadeInUp">Available features</h3>
-            </div>
-            <div class="cs-height_50 cs-height_lg_40"></div>
-            <div class="row">
-                <div class="col-xl-4 col-md-6">
-                    <div class="cs-iconbox cs-style1 cs-type1">
-                        <div class="cs-iconbox_icon cs-center">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/icon_box_5.svg" alt="Icon">
-                        </div>
-                        <div class="cs-iconbox_in">
-                            <h3 class="cs-iconbox_title">Effortless card</h3>
-                            <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing and typese Ipsum is simply dummy</div>
-                        </div>
-                    </div>
-                    <div class="cs-height_25 cs-height_lg_25"></div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="cs-iconbox cs-style1 cs-type1">
-                        <div class="cs-iconbox_icon cs-center">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/icon_box_6.svg" alt="Icon">
-                        </div>
-                        <div class="cs-iconbox_in">
-                            <h3 class="cs-iconbox_title">Software accuracy</h3>
-                            <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing and typese Ipsum is simply dummy</div>
-                        </div>
-                    </div>
-                    <div class="cs-height_25 cs-height_lg_25"></div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="cs-iconbox cs-style1 cs-type1">
-                        <div class="cs-iconbox_icon cs-center">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/icon_box_7.svg" alt="Icon">
-                        </div>
-                        <div class="cs-iconbox_in">
-                            <h3 class="cs-iconbox_title">Customization</h3>
-                            <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing and typese Ipsum is simply dummy</div>
-                        </div>
-                    </div>
-                    <div class="cs-height_25 cs-height_lg_25"></div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="cs-iconbox cs-style1 cs-type1">
-                        <div class="cs-iconbox_icon cs-center">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/icon_box_8.svg" alt="Icon">
-                        </div>
-                        <div class="cs-iconbox_in">
-                            <h3 class="cs-iconbox_title">Customer data</h3>
-                            <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing and typese Ipsum is simply dummy</div>
-                        </div>
-                    </div>
-                    <div class="cs-height_25 cs-height_lg_25"></div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="cs-iconbox cs-style1 cs-type1">
-                        <div class="cs-iconbox_icon cs-center">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/icon_box_9.svg" alt="Icon">
-                        </div>
-                        <div class="cs-iconbox_in">
-                            <h3 class="cs-iconbox_title">Seamless checkout</h3>
-                            <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing and typese Ipsum is simply dummy</div>
-                        </div>
-                    </div>
-                    <div class="cs-height_25 cs-height_lg_25"></div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="cs-iconbox cs-style1 cs-type1">
-                        <div class="cs-iconbox_icon cs-center">
-                            <img src="<?php echo get_template_directory_uri() ?>/img/icon_box_10.svg" alt="Icon">
-                        </div>
-                        <div class="cs-iconbox_in">
-                            <h3 class="cs-iconbox_title">High speed process</h3>
-                            <div class="cs-iconbox_subtitle">Lorem Ipsum is simply dummy text of the most printing and typese Ipsum is simply dummy</div>
-                        </div>
-                    </div>
-                    <div class="cs-height_25 cs-height_lg_25"></div>
-                </div>
-            </div>
-        </div>
-        <div class="cs-height_75 cs-height_lg_45"></div>
-    </div>
-</section>
-<!-- End All Feature -->
 <!-- Start Retail Stores -->
 <section class="cs-gradient_bg_1">
-    <div class="cs-height_95 cs-height_lg_70"></div>
+    <div class="cs-height_135 cs-height_lg_70"></div>
     <div class="container">
         <div class="cs-seciton_heading cs-style1 text-center">
             <h3 class="cs-section_title wow fadeInUp">Phần mềm bán hàng hoàn hảo cho<br>hầu hết các cửa hàng bán lẻ</h3>
